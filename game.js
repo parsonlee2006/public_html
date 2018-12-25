@@ -74,7 +74,7 @@ playGame.prototype = {
                // the quadratic easing will simulate friction
                var spinTween = game.add.tween(wheel).to({
                     angle: 360 * rounds + degrees
-               }, 3000, Phaser.Easing.Quadratic.Out, true);
+               }, 100, Phaser.Easing.Quadratic.Out, true);
                // once the tween is completed, call winPrize function
                spinTween.onComplete.add(this.winPrize, this);
           }
